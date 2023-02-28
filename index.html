@@ -4,13 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <link
       rel="stylesheet"
@@ -20,136 +27,120 @@
       referrerpolicy="no-referrer"
     />
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-    <title>Fashion</title>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/mediaQuery.css" />
+    <title>Fashion home page</title>
   </head>
   <body>
-    <header class="fashion-header">
-      <nav class="py-lg-2">
-        <a
-          class="text-decoration-none brand-name fs-1 text-white"
-          href="#"
-          target="_blank"
-          >nuvosa</a
-        >
-        <div class="header-icons-container">
-          <a href="#" target="_blank"
-            ><img src="./assets/images/header/search-icon.svg" alt=""
-          /></a>
-          <a href="#" target="_blank">
-            <img src="./assets/images/header/menu-icon.svg" alt="" />
-          </a>
-        </div>
-      </nav>
-    </header>
-
-    <section class="hero container-fluid py-4 overflow-hidden">
-      <div class="row overflow-hidden hero-row">
-        <span class="carousel-now-text overlapping-elements">NOW</span>
-        <span class="elegant-text-box-2 overlapping-elements"
-          >ELegant <br />---Exceptional</span
-        >
-
-        <p class="elegant-text-box overlapping-elements">
-          ELegant <br /><img
-            src="./assets/images/header/elegant-text-dsh.svg"
-            alt=""
+    <!-- Rahul start -->
+    <!-- Take A Look At Our Bestsellers -->
+    <section class="swiper mySwiper d-flex flex-column bestseller">
+        <!-- <img src="./assets/images/Texture.png" src="./assets/images/bestsellers/Gradient1.png" alt="Texture"> -->
+      <div class="bestseller-heading">
+        <img src="./assets/images/bestsellers/Star.svg">
+        Take A Look At Our Bestsellers</div>
+      <div class="swiper-wrapper d-flex align-items-center">
+        <div class="swiper-slide d-flex m-1 p-2 flex-column bestseller-card1">
+          <img
+            src="./assets/images/bestsellers/model1.png"
+            alt="bestseller model picture"
           />
-          Exceptional
-        </p>
-
-        <div
-          class="hero-carousel d-flex offset-4 offset-md-2 justify-content-lg-center justify-content-md-center"
-        >
-          <div class="carousel-slide">
-            <img src="./assets/images/header/carousel-slide-img-1.svg" alt="" />
-          </div>
-          <div class="my-auto carousel-arrow-container">
-            <button class="btn btn-carousel-arrow">
-              <div>
-                <img
-                  src="./assets/images/header/carousel-slide-arrow.svg"
-                  alt="carousel-arrow"
-                />
-              </div>
-            </button>
-          </div>
-          <div class="carousel-slide">
-            <div>
-              <img
-                src="./assets/images/header/carousel-slide-img-1.svg"
-                alt=""
-              />
+          <div class="d-flex flex-column card-details">
+            <h2 class="bestseller-card1-title">Tokyo Talkies Black Body-con</h2>
+            <p class="bestseller-card1-details">
+              Black solid knitted bodycon dress with tie-ups detail, has
+              shoulder straps,
+            </p>
+            <div class="d-flex bestseller-card1-price">
+              <p class="price">$684.88</p>
+              <p class="date bestseller-card1-details">22.06.22</p>
             </div>
           </div>
-          <span class="there-are-text overlapping-elements"
-            >There are many variations of <br />
-            passages of Lorem Ipsum <br />
-            available, but the majority <br />
-            have suffered alteration <br />
-            in some form</span
-          >
-          <span class="jacket-text overlapping-elements"
-            >Jackets <br />
-            <br />
-            Contoured Black
-            <br />
-            Collections</span
-          >
-          <span class="fashion-design-text overlapping-elements"
-            >Fashion design <br />
-            2022</span
-          >
+        </div>
+
+        <div class="swiper-slide bestseller-card1 m-1 p-2 bestseller-card2">
           <img
-            class="round-text-wrap"
-            src="./assets/images/header/round-text-wrap.svg"
-            alt=""
+            src="./assets/images/bestsellers/model2.png"
+            alt="bestseller model picture"
+          />
+          <div class="bestseller-card1-title card2-title">
+            Tokyo Talkies Women Grey & Black
+          </div>
+        </div>
+
+        <div class="swiper-slide d-flex m-1 p-2 flex-column bestseller-card1">
+          <div class="d-flex flex-column card-details">
+            <h2 class="bestseller-card1-title">London Belly Vent Vici</h2>
+            <p class="bestseller-card1-details">
+              Black solid knitted bodycon dress with tie-ups detail, has
+              shoulder straps,
+            </p>
+            <div class="d-flex bestseller-card1-price">
+              <p class="price">$684.88</p>
+              <p class="date bestseller-card1-details">22.06.22</p>
+            </div>
+          </div>
+
+          <img
+            src="./assets/images/bestsellers/model1.png"
+            alt="bestseller model picture"
           />
         </div>
-      </div>
 
-      <div class="row">
-        <div
-          class="collections-container d-flex justify-content-between px-md-5 pt-5 flex-md-row"
-        >
-          <div class="d-flex">
-            <p>Collections</p>
-            <img class="pb-2" src="./assets/images/header/dash.svg" alt="" />
+        <div class="swiper-slide bestseller-card1 bestseller-card2 p-2 m-1">
+          <img
+            src="./assets/images/bestsellers/model2.png"
+            alt="bestseller model picture"
+          />
+          <div class="bestseller-card1-title card2-title">
+            Tokyo Talkies Women Grey & Black
           </div>
-          <p>Similar Projects</p>
-          <p>Send The Application</p>
         </div>
       </div>
+      <div class="swiper-pagination"></div>
 
-      <div class="">
-        <ul class="hero-icons">
-          <li>
-            <a href="#"
-              ><img
-                src="./assets/images/header/twitter.svg"
-                alt="instagram-icon"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                src="./assets/images/header/facebook.svg"
-                alt="facebook-icon"
-            /></a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./assets/images/header/instagram.svg" alt="" />
-            </a>
-          </li>
-        </ul>
-      </div>
+      <div class="d-flex align-items-center justify-content-end bestseller-button">
+        <div class="d-flex align-items-center bestseller-button-left me-3"><span>Deals On Top Brands</span>
+            <a href="#" target="_" class="fa fa-angle-left"></a>
+        </div>
+        <div class="d-flex align-items-center bestseller-button-right">
+            <a href="#" target="_" class="fa fa-angle-right"></a>
+            <span>Categories to Nag</span>
+        </div>
+        </div>
     </section>
 
-    <script src="./js/main.js"></script>
+    <!-- Unisex & Aesthetic Clothes -->
+    <section class="aesthetic mt-2 d-flex">
+      <h2 class="bestseller-heading mb-5">Unisex & Aesthetic Clothes</h2>
+      <div class="d-flex aesthetic-image">
+            <img
+            src="./assets/images/aesthetic-lothes/aesthetic-model.png"
+            alt="Unisex & Aesthetic Clothe model"
+            />
+            <div class="aesthetic-content">
+            <p class="bestseller-card1-details">
+                It is a long established fact that a reader will be distracted by
+                the readable content of a page when looking at its layout. The point
+                of using Lorem Ipsum is that it has .<br />
+                normal distribution of letters, as opposed to using 'Content here,
+                content here', making it look like readable English. Many desktop
+                publishing packages and web page editors now use Lorem Ipsum .
+                normal distribution of letters, as opposed to using 'Content here,
+                content here', making it<br />look like readable English. Many
+                desktop publishing packages and web page editors now use Lorem Ipsum
+                .
+            </p>
+            <h2 class="aesthetic-content-text2 bestseller-button-left">
+                STYLE-CAST HOTTEST FINDS
+                <a href="#" target="_" class="ms-2 fa fa-angle-right"></a>
+            </h2>
+            </div>
+      </div>
+    </section>
+    <!-- Rahul end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
