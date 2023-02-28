@@ -18,6 +18,7 @@ font-family: "Work Sans", sans-serif; */
 
 html body {
   font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #171614;
   font-weight: 500;
   padding: 0;
   margin: 0;
@@ -292,3 +293,138 @@ body header .brand-name {
     left: 23%;
   }
 }
+/* Joy ending */
+
+
+:root {
+  --mobile-margin :0rem 0.938rem 0rem 0.938rem;
+  --bestseller-font-color1 : #F0EDE6;
+  --bestseller-font-color2 : #888785;
+  --bestseller-font-color3 : #DF4949;
+  --mobile-card-title-size1 : 1.2rem;
+  --mobile-card-title-size2 : .7rem;
+  --mobile-card-title-size3 : 1.1rem;
+  --font-weight1 : 400;
+  --font-weight2 : 500;
+}
+
+.bestseller {
+  background-image: url(../images/bestsellers/Ellipse1.svg);
+  background-size: contain;
+  /* background-image: url(../images/bestsellers/Gradient1.png); */
+  flex-direction: column;
+}
+/* .bestseller>img {
+  mix-blend-mode: overlay;
+  opacity: 0.3
+} */
+.bestseller-heading {
+  font-weight: var(--font-weight2);
+  font-size: 2rem;
+  color: var(--bestseller-font-color1);
+  text-align: center;
+  /* margin: var(--mobile-margin); */
+}
+.bestseller-heading img {
+  position: absolute;
+  left: 90%;
+  top: -1%;
+}
+.swiper-wrapper {
+  margin-top: 2rem;
+}
+.bestseller-card1 {
+  margin-top: 2rem;
+  max-width: 85%;
+  /* align-items: center; */
+  
+}
+.bestseller-card1 img{
+  max-width: 70%;
+  z-index: 1;
+  /* align-items: center; */
+}
+.bestseller-card2 img {
+  max-width: 95%;
+}
+.bestseller-card1-title {
+  font-weight: var(--font-weight1);
+  font-size: var(--mobile-card-title-size1);
+  color: var(--bestseller-font-color1);
+}
+.bestseller-card1-details {
+  font-weight: var(--font-weight1);
+  color: var(--bestseller-font-color2);
+  font-size: var(--mobile-card-title-size2);
+  line-height: 1.2rem;
+}
+.card-details {
+  max-width: 80%;
+}
+.bestseller-card1-price {
+  justify-content: space-between;
+}
+.bestseller-card1-price .price {
+  color : var(--bestseller-font-color3);
+  font-weight: var(--font-weight2);
+  font-size: var(--mobile-card-title-size3);
+  /* display: inline-block; */
+}
+.bestseller-card1-price .date {
+  font-size: var(--mobile-card-title-size3);
+  /* display: inline-block; */
+}
+.card2-title{
+  position: absolute;
+  max-width: 70%;
+  background: #171614;
+  margin-top: -3.6rem;
+  z-index: 50;
+}
+.bestseller-button {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  color: var(--bestseller-font-color1);
+}
+/* .bestseller-button-left span, .bestseller-button-right span {
+  max-width: 10%;
+} */
+.bestseller-button-left a, .bestseller-button-right a{
+  padding: 0.9rem 1.2rem 0.9rem 1.2rem;
+  border: 1px solid var(--bestseller-font-color3);
+  border-radius: 50%;
+  color: var(--bestseller-font-color3);
+  text-decoration: none;
+}
+
+.aesthetic {  
+  /* background-image: url(../images/aesthetic-lothes/Gradient.png); */
+  background-image: url(../images/aesthetic-lothes/Ellipse2.svg);
+  background-size: cover;
+  flex-direction: column;
+  margin: var(--mobile-margin);
+}
+.aesthetic-image {
+  flex-direction: column;
+  justify-content: center;
+}
+.aesthetic-image img {
+  max-width: 100%;
+}
+.aesthetic-content {
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.aesthetic-content-text2 {
+  font-weight: var(--font-weight1);
+  font-size: var(--mobile-card-title-size1);
+  line-height: 1.5rem;
+  color: var(--bestseller-font-color3);
+}
+.aesthetic-content-text2 a {
+  padding:.22rem .5rem .22rem .5rem;
+  border: 1px solid var(--bestseller-font-color2);
+  color: var(--bestseller-font-color1);
+}
+
+/* Rahul end */
