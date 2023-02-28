@@ -34,3 +34,19 @@ let swiper = new Swiper(".mySwiper", {
     },
     });
     //Rahul end
+
+    //ritabrita basak JS STARTS
+    const element = document.querySelector("#follow");
+
+    element.addEventListener('wheel', (event) => {
+    event.preventDefault();
+
+    element.scrollBy({
+        left: event.deltaY < 0 ? -30 : 30,
+        
+    });
+    });
+
+    // gsap.fromTo(".star",{x:-20}, {x:35, y:120, rotate:270, repeat:-1, duration:4});
+
+    //ritabrita basak JS ENDS
